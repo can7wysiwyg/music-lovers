@@ -1,0 +1,259 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap'); */
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* heading css*/
+.heading h3 {
+  text-align: center;
+  font-size: calc(28px + (42 - 28) * (100vw - 360px)/(1920 - 360));
+}
+.heading p {
+  text-align: center;
+  font-size: calc(18px + (24 - 18) * (100vw - 360px)/(1920 - 360));
+}
+hr {
+  overflow: visible; /* For IE */
+  height: 30px;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px 0 0 0;
+  border-radius: 20px;
+}
+hr:before { /* Not really supposed to work, but does */
+  display: block;
+  content: "";
+  height: 30px;
+  margin-top: -31px;
+  border-style: solid;
+  border-color: black;
+  border-width: 0 0 1px 0;
+  border-radius: 20px;
+}
+/* banner css */
+/* .hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  right: 10%;
+  transform: translateY(-50%);
+  color: white;
+  font-size: 20px;
+}
+
+.hero-text > * {
+  padding: 10px;
+}
+*/
+.perfect {
+    font-weight: 500;
+    background: #f70606ab;
+    line-height: 70px;
+} 
+/* If screen size is more than 600px wide then.. */
+@media screen and (min-width: 600px){
+  .perfect {
+    width: 25%;
+    margin: auto;
+  }
+  .features {
+    width: 80%;
+  }
+}
+/* @media screen and (min-width: 1440px){
+  .feature {
+    width: 25%;
+  }
+} */
+/* 
+.perfect-outer {
+  margin-top: 20px;
+  margin-bottom: 20px;
+} */
+
+.download {
+  margin: 10px;
+  width: 200px;
+  padding: 15px;
+  font-size: 18px;
+  border: #fff solid 1px;
+  background: #fff;
+  color: black;
+}
+
+.download:hover {
+  background: #f70606ab;
+  color: white;
+}
+.rs-carousel-slider-item {
+  background: url("./components/main//assets/hero.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.rs-carousel-toolbar {
+  display: none;
+}
+
+.hero-text {
+  color: white;
+  text-align: center;
+}
+
+.feature-icon {
+  color: white;
+  background-color: red;
+  width: 100px;
+  height: 100px;
+  box-shadow: 0px 0px 10px red;
+}
+
+.features {
+  text-align: center;
+}
+
+/* Music Lovers Fold */
+.music-parent {
+  position: relative;
+}
+.right-fd {
+  position: relative;
+  background: red;
+  color: white;
+  height: 100%;
+  margin-top: 35px;
+}
+.left-fd {
+  position: relative;
+  height: 100%;
+}
+.left-fd img {
+  object-fit: cover;
+}
+.right-fd-inner > * {
+  padding: 10px;
+}
+.right-fd-inner {
+  margin-left: -10%;
+}
+.right-fd-inner h1{
+  font-size: calc(30px + (60 - 30) * (100vw - 360px)/(1920 - 360));
+}
+
+.read-more {
+  margin: 5px;
+  width: 150px;
+  padding: 12px;
+  font-size: 18px;
+  border: #fff solid 1px;
+  background: #fff;
+  color: red;
+}
+
+.read-more:hover {
+  background: black;
+  color: white;
+}
+
+@media screen and (max-width: 768px){
+  .right-fd {
+    margin-top: 0px;
+  }
+  .right-fd-inner {
+    margin: 0 5%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .music-parent {
+    height: 75vh;
+  }
+}
+
+/* News CSS */
+.news {
+  padding: 6% 0;
+}
+@media screen and (max-width: 576px) {
+  .news {
+    padding: 20% 0;
+  }
+}
+.news-card .rs-panel-body {
+  padding: 0;
+}
+.news-card-body {
+  padding: 8%;
+}
+
+/* footer - css */
+.news-letter {
+  background: red;
+  color: white;
+}
+
+.subscribe {
+  border-radius: 8px;
+  margin-top: 35px;
+  width: 150px;
+  padding: 8px;
+  font-size: 18px;
+  border: #fff solid 1px;
+  background: black;
+  color: white;
+}
+
+.subscribe:hover {
+  background: white;
+  color: black;
+}
+
+@media screen and (max-width: 768px) {
+  .subscribe-div {
+    text-align: center;
+  }
+}
+
+.news-letter input {
+  padding: 11px;
+}
+
+.footer-band {
+  background-color: black;
+  color: white;
+}
+
+.get-in-touch {
+  border-radius: 8px;
+  margin-top: 35px;
+  width: 150px;
+  padding: 8px;
+  font-size: 18px;
+  border: #fff solid 1px;
+  background: white;
+  color: black;
+}
+
+.get-in-touch:hover {
+  background: red;
+  color: white;
+}
+
+address {
+  font-size: calc(18px + (22 - 18) * (100vw - 360px)/(1920 - 360));
+}
+textarea.rs-input {
+  min-width: 0;
+}
+
+.footer-gal > * {
+  padding: 2px;
+}
+.footer-gal img {
+  height: 80px;
+}
